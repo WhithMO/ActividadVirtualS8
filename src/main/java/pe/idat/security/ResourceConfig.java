@@ -19,7 +19,7 @@ public class ResourceConfig  extends ResourceServerConfigurerAdapter{
         http.anonymous().disable();
         
         http.authorizeRequests()
-            .antMatchers("/estudiante/v1/**").permitAll()
+            .antMatchers("/alumno/v1/**", "/colegio/v1/**").permitAll()
             .and()
             .exceptionHandling()
             .accessDeniedHandler(new OAuth2AccessDeniedHandler());
