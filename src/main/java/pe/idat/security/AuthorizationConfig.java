@@ -65,8 +65,8 @@ public class AuthorizationConfig extends AuthorizationServerConfigurerAdapter{
 			public OAuth2AccessToken enhance(OAuth2AccessToken accessToken, OAuth2Authentication authentication) {
 				
 				Map<String, Object> informacionAdicional = new HashMap<>();
-				informacionAdicional.put("suscribete", "a mi canal");
-				informacionAdicional.put("profesor", "Wilder");
+				informacionAdicional.put("grupo", "8");
+				informacionAdicional.put("semana", "9");
 				
 				DefaultOAuth2AccessToken token = new DefaultOAuth2AccessToken(accessToken);
 				token.setAdditionalInformation(informacionAdicional);
