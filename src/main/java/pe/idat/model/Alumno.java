@@ -8,18 +8,18 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "estudiantes")
-public class Estudiante {
+public class Alumno {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nombre;
 	
-	public Estudiante() {
+	public Alumno() {
 		
 	}
 
-	public Estudiante(Integer id, String nombre) {
+	public Alumno(Integer id, String nombre) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
